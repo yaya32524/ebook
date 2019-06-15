@@ -1,4 +1,4 @@
 const book = {
-    text: state => state.Book.text
+    fileName: state => state.Book.fileName
 }
 export default book;

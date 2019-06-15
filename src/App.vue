@@ -1,23 +1,10 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
 <script>
-  import { mapGetters } from 'vuex'
   export default{
-    computed: {
-      ...mapGetters(['text'])
-    },
-    mounted(){
-      this.$store.dispatch('setText', 11).then(()=>{
-        console.log(this.text)
-      })
-    } 
   }
   document.addEventListener('DOMContentLoaded', ()=>{
     const html = document.querySelector('html');
@@ -26,7 +13,11 @@
     html.style.fontSize = fontSize + 'px';
   })
 </script>
-<style lang='sass'>
-    @import './assets/styles/global.scss'
+<style lang='scss' rel="stylesheet/scss">
+  #app{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
 
 </style>
