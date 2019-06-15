@@ -9,10 +9,10 @@
 
     global.ePub = Epub;
     export default{
-        computed:{
+        computed: {
             ...mapGetters(['fileName'])
         },
-        methods:{
+        methods: {
             prevPage(){
                 if(this.rendition) this.rendition.prev();
                 
@@ -24,7 +24,7 @@
                 
             },
             initEpub(){
-                const url = ' http://192.168.1.105:8081/epub/' + this.fileName +'.epub';   
+                const url = 'http://192.168.1.105:8081/epub/' + this.fileName +'.epub';   
                 this.book = new Epub(url);
                 this.rendition = this.book.renderTo('read',{
                     width: innerWidth,
@@ -57,7 +57,7 @@
   }
 </script>
 <style lang='scss'>
-    @import url('../../assets/styles/global.scss');
+    @import '../../assets/styles/global';
     html{
          touch-action:none;
     }

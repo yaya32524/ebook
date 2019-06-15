@@ -1,4 +1,4 @@
-const books = {
+const book = {
     state: {
       fileName: ''
     },
@@ -13,4 +13,4 @@ const books = {
       }
     }
   }
-export default books;
+export default book;

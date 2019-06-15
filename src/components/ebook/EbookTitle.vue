@@ -22,9 +22,9 @@
     export default{
     }
 </script>
-<style lang='scss'>
-    @import url('../../assets/styles/global.scss');
-    .tite-wrapper{
+<style lang='scss' rel="stylesheet/scss">
+    @import '../../assets/styles/global';
+    .title-wrapper{
         position: absolute;
         top: 0;
         left: 0;
@@ -34,9 +34,11 @@
         height: px2rem(48);
         background: white;
         box-shadow: 0 px2rem(8) px2rem(8) rgba(0, 0, 0, .15);
+        font-size: px2rem(20);
         .left{
-            flex: 0 0 px2rem(60);
             @include center;
+            flex: 0 0 px2rem(60);
+            margin-left: 15px;
         }
         .right{
             flex: 1;
@@ -44,8 +46,11 @@
             display: flex;
             justify-content: flex-end;
             .icon-wrapper {
-                flex: 0 0 px2rem(37);
-                @include left;
+                @include center;
+                flex: 0 0 px2rem(40);
+                .icon-shelf, .icon-cart{
+                    font-size: px2rem(22);
+                }
             }
         }
     }

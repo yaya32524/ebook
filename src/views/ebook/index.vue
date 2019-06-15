@@ -1,7 +1,7 @@
 <template>
     <div class="ebook">
-        <ebook-reader></ebook-reader>
         <ebook-title></ebook-title>
+        <ebook-reader></ebook-reader>
     </div>
 </template>
 <script>

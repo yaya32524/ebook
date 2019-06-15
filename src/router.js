@@ -8,8 +8,7 @@ export default new Router({
     {
       path: '/',
       redirect: '/ebook'
-    },
-    {
+    }, {
       path: '/ebook',
       component: ()=>import('./views/ebook/index.vue'),
       children: [{

@@ -8,8 +8,6 @@
     }
 </script>
 <style lang='scss'>
-    @import url('../../assets/styles/global.scss');
-    html{
-         touch-action:none;
-    }
+    @import '../../assets/styles/global';
+    
 </style>

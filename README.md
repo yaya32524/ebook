@@ -1,4 +1,4 @@
-# vue-ebook
+# ebook
 
 ## Project setup
 ```
